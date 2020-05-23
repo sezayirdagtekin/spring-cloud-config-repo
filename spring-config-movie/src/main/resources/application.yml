@@ -1,0 +1,14 @@
+server:  port: 8083
+movie:
+  name: Matrix
+  year: 1999
+
+ 
+management:  endpoints:    web:      exposure:        include: "*"
+                
+spring:
+ profiles:
+  active: default  
+
+spring.application.name: movie-micro-service 
+spring.cloud.config.uri: http://localhost:8888
