@@ -1,13 +1,14 @@
 
 app:
-    greeting: Springboot Config
+    greeting: Springboot Config from configuration server
     version: 2:1
-    environment: names=dev,qa,prod
     database: '{  host:"localhost", username:"sezayir", password:"1234"  }'
+    environment:
+     names: dev,qa,prod
     
 mail:
-    from: info@sezo.com
-    hostname: info@sezo.com
+    from: info-config@sezo.com
+    hostname: info-config@sezo.com
     port: 8091
  
 management:
@@ -20,4 +21,4 @@ spring:
  profiles:
   active: dev  
   
-spring.cloud.config.uri: http://localhost:8888
+#spring.cloud.config.uri: http://localhost:8888
