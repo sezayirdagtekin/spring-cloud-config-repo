@@ -1,0 +1,10 @@
+
+app:
+    greeting: Springboot Config dev
+    version: 2:1
+    environment: names=dev,qa,prod
+    database: '{  host:"devhost", username:"sezayir", password:"1234"  }'
+    
+mail:
+    port: 9001
+ 

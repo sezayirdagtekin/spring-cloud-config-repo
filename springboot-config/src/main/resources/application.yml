@@ -1,0 +1,21 @@
+
+app:
+    greeting: Springboot Config
+    version: 2:1
+    environment: names=dev,qa,prod
+    database: '{  host:"localhost", username:"sezayir", password:"1234"  }'
+    
+mail:
+    from: info@sezo.com
+    hostname: info@sezo.com
+    port: 8091
+ 
+management:
+           endpoints:
+            web:
+              exposure:
+                include: "*"
+                
+spring:
+ profiles:
+  active: dev  
